@@ -31,8 +31,8 @@ h1 {
   letter-spacing: 0.9px;
   background: linear-gradient(
     90deg,
-    rgba(249, 211, 180, 1) 0%,
-    rgba(249, 211, 180, 0) 100%
+    rgb(21, 218, 185) 0%,
+    rgba(236, 113, 12, 0) 100%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -41,7 +41,7 @@ h1 {
 }
 
 .search {
-  width: 71%;
+  width: 80%;
   margin: 4rem 0 2rem;
 
   display: flex;
@@ -50,6 +50,7 @@ h1 {
 
   padding: 1.5rem 1.75rem;
   border-radius: 3rem;
+  border: white solid;
   background: #1f2123;
   -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
   box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
