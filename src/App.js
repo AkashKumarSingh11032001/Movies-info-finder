@@ -4,8 +4,8 @@ import './App.css';
 import SearchIcon from './icon.svg';
 import MoviesCard from './MoviesCard';
 
-
-const ApiKey = "http://www.omdbapi.com/?i=tt3896198&apikey=99f9c1f9"
+const api_key = "99f9c1f9"
+const ApiKey = `http://www.omdbapi.com/?i=tt3896198&apikey=${api_key}`
 
 // const movie1 = {
 //     "Title": "Ironman Triathlon World Championship",
@@ -25,7 +25,8 @@ const App = () => {
     },[])
 
     const searchMovies = async (title) => {
-        const response = await fetch(`${ApiKey}&s=${title}`);
+        const urlTofetch = `${ApiKey}&s=${title}`
+        const response = await fetch(urlTofetch);
         const data = await response.json();
 
         setMovies(data.Search);
